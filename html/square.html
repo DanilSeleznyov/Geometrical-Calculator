@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="/main.css" />
+	</head>
+	<body>
+		<header class="app_header app_section">
+			<div class="app_wrapper_header app_wrapper">
+				<img src="/img/calculator-icon-0.png" alt="" class="app_logo" />
+				<div class="app_nav">
+					<ul class="app_nav_list">
+						<li><a href="/index.html">Home</a></li>
+						<li><a href="/html/circle.html">Circle</a></li>
+						<li><a href="/html/rectangle.html">Rectangle</a></li>
+						<li><a href="/html/square.html">Square</a></li>
+						<li><a href="/html/triangle.html">Triangle</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<section class="app_main_home app_section">
+			<div class="app_wrapper_main app_wrapper">
+				<div class="app_about">
+                    <h2 class="app_title">Square Calculator</h2>
+					<p class="app_about_text">
+						On this page you can calculate such square parameters as Square, Perimeter, Diagonal length and Outer/Inner circle radiuses.
+					</p>
+				</div>
+				<div class="app_calculator">
+                    <div class="input_zone">
+                        <label
+                            for="input_square_length"
+                            class="input_label"
+                            >Radius</label
+                        >
+                        <input type="number" class="input input_square_length" />
+                        
+                    </div>
+                    <h2 class="output output_text">
+                        Perimeter is equal to <span class="output_square_perimeter"></span>
+                    </h2>
+                    <h2 class="output output_text">
+                        Square is equal to <span class="output_square_square"></span>
+                    </h2>
+                    <h2 class="output output_text">
+                        Diagonal is equal to <span class="output_square_diagonal"></span>
+                    </h2>
+                    <h2 class="output output_text">
+                        Radius of outer circle is equal to <span class="output_square_outer"></span>
+                    </h2>
+                    <h2 class="output output_text">
+                        Radius of inner circle is equal to <span class="output_square_inner"></span>
+                    </h2>
+                    <button class="btn_calc" onclick="calcResult('square', 2)">Calculate</button>
+                </div>
+			</div>
+		</section>
+		<footer class="app_footer app_section">
+			<div class="app_wrapper_footer app_wrapper">
+                <p>@Calculator 2025. All rights reserved.</p>
+                
+            </div>
+		</footer>
+		<script src="/script.js"></script>
+	</body>
+</html>

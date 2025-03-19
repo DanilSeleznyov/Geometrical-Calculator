@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto Slab', serif;
+}
+
+.app {
+	&_calculator{
+		max-width: 500px;
+		width: 100%;
+	}
+	&_header {
+		padding: 10px;
+	}
+	&_footer {
+		padding: 10px;
+	}
+	&_section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	&_wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		max-width: 1200px;
+
+		&_header {
+			justify-content: space-between;
+			width: 100%;
+			img {
+				max-width: 50px;
+			}
+		}
+
+		&_main {
+			flex-direction: column;
+			text-align: center;
+			gap: 40px;
+		}
+	}
+
+	&_main {
+		&_home {
+			padding: 50px 0 200px;
+		}
+	}
+
+	&_about {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+
+		&_text {
+			font-size: 17px;
+			max-width: 800px;
+		}
+	}
+
+	&_nav {
+		width: 100%;
+		&_list {
+			display: flex;
+			list-style-type: none;
+			justify-content: space-evenly;
+
+			li {
+				a {
+					text-decoration: none;
+					color: rgb(28, 28, 28);
+					font-size: 18px;
+				}
+			}
+		}
+	}
+
+	&_links {
+		&_list {
+			list-style-type: none;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px;
+			li {
+				a {
+					text-decoration: none;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					font-size: 20px;
+				}
+				:hover {
+					transition: 0.5s ease;
+					transform: scale(1.03);
+				}
+			}
+		}
+	}
+
+	&_title {
+		font-size: 36px;
+	}
+
+	&_calculator {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+}
+
+.input {
+	padding: 10px;
+	background: #c6dbff;
+	font-size: 20px;
+	letter-spacing: 2px;
+	border: none;
+	border-radius: 5px;
+
+	&_zone {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+	}
+}
+
+.output {
+	&_text {
+		display: none;
+	}
+
+	span {
+		color: rgb(20, 118, 255);
+	}
+}
+
+.btn {
+	&_calc {
+		padding: 10px;
+		background: #1e74ff;
+		cursor: pointer;
+		border-radius: 10px;
+		border: none;
+		color: white;
+		font-size: 18px;
+		font-weight: bold;
+		letter-spacing: 2px;
+	}
+}
